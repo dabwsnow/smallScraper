@@ -3,8 +3,10 @@ from bs4 import BeautifulSoup
 from urllib.parse import urljoin
 import json
 
+BASE_URL = "https://books.toscrape.com/"
+
 class BookScraper:
-    def __init__(self, base_url="https://books.toscrape.com/"):
+    def __init__(self, base_url=BASE_URL):
         self.base_url = base_url
         self.session = requests.Session()
 
